@@ -2,6 +2,11 @@ import React from "react";
 import "../assets/style.css"
 import Whats from "../assets/media/whatsapp.png"
 import Email from "../assets/media/email.svg"
+import Linkedin from "../assets/media/linkedin.svg"
+import Github from "../assets/media/github.svg"
+import Video from "../assets/media/capivair.mp4"
+import Naped from "../assets/media/Naped.jpeg"
+import Insta from "../assets/media/clone-insta.png"
 
 function Principal() {
     return (
@@ -16,8 +21,8 @@ function Principal() {
                         <h2 className="mb-4 text-light">Desenvolvedora Front-end & UI Designer.</h2>
                     </div>
                     <div className="buttons">
-                        <a className="me-2 btn btn-outline btn-cyan-color" href="https://www.linkedin.com/in/l%C3%ADvia-gomes-6a5771230/" target="_blank"><img className="me-2 relative-bottom" src="./assets/linkedin.svg" alt=""/>LinkedIn</a>
-                        <a className="btn btn-outline rosa-chock-color" href="https://github.com/ViviSGG" target="_blank"><img className="me-2" src="./assets/github.svg" alt=""/>GitHub</a>
+                        <a className="me-2 btn btn-outline btn-cyan-color" href="https://www.linkedin.com/in/l%C3%ADvia-gomes-6a5771230/" target="_blank"><img className="me-2 relative-bottom" src={Linkedin} alt=""/>LinkedIn</a>
+                        <a className="btn btn-outline rosa-chock-color" href="https://github.com/ViviSGG" target="_blank"><img className="me-2" src={Github} alt=""/>GitHub</a>
                     </div>
                 </section>
             </section>
@@ -51,7 +56,7 @@ function Principal() {
                     <h2 className="text-light mb-4">PROJETOS</h2>
                     <section className="cards-videos mb-4">
                         <figure className="card card-video">
-                            <video className="card-img-top" src="assets\legPretaBIG-pitch-capivair  - Feito com o Clipchamp_1685144292413 - Compressed with FlexClip.mp4" controls></video>
+                            <video className="card-img-top" src={Video} controls></video>
                             <figcaption className="ps-3 pt-1 text-secondary">Edição, Lívia Gomes</figcaption>
                             <div className="card-body">
                                 <h3 className="text-light">Capivair</h3>
@@ -109,7 +114,7 @@ function Principal() {
                             </div>
                         </figure>
                         <figure className="card card-video">
-                            <img className="card-img-top" src="./assets/clone-insta.png" alt=""/>
+                            <img className="card-img-top" src={Insta} alt=""/>
                             <div className="card-body">
                                 <h3 className="text-light">Clone login do Instagram</h3>
                                 <p className="card-text text-secondary">Instagram clone com React.js.</p>
@@ -128,7 +133,7 @@ function Principal() {
                     </section>
                     <section className="cards-imagens">
                         <div className="card card-img">
-                            <img className="card-img-top" src="./assets/Naped.jpeg" alt=""/>
+                            <img className="card-img-top" src={Naped} alt=""/>
                             <div className="card-body">
                                 <h3 className="text-light">Naped</h3>
                                 <p className="card-text text-secondary">Page responsiva, feita com HTML5 E CSS3 puro.</p>
